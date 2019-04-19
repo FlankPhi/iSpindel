@@ -333,6 +333,7 @@ bool SenderClass::sendUbidots(String token, String name)
         _jsonVariant.printTo(_client);
         _client.println();
         CONSOLELN(msg);
+         Serial.write(_jsonVariant.measureLength());
     }
     else
     {
